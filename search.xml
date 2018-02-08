@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[set]]></title>
-    <url>%2F2018%2F01%2F28%2Fundefined%2Fset%2F</url>
+    <title><![CDATA[新窝]]></title>
+    <url>%2F2018%2F02%2F08%2F%E6%96%B0%E7%AA%9D-1%2F</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[安家]]></title>
-    <url>%2F2018%2F01%2F28%2Fundefined%2F%E5%AE%89%E5%AE%B6%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F01%2F26%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[新窝]]></title>
+    <url>%2F2018%2F02%2F08%2F%E6%96%B0%E7%AA%9D%2F</url>
+    <content type="text"><![CDATA[终于安家了 作为一个拖延癌晚期患者，和三分钟热度异想天开少女，终于搭建好了自己的博客。也开始学习怎么用Markdown来记录学习与生活。 真真是，万事开头难，从去年开始安装hexo， 却一直遇到各种杂七杂八的问题，最终放弃转向博客园。但是虽然是个无比懒的人，但是依旧不喜欢循规蹈矩，还是通过一番不怎么样的努力安家了。 ☆´∀｀☆ 我是有时候不喜欢用标点符号的Amber，请多指教。]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>流水混账</tag>
+      </tags>
   </entry>
 </search>
