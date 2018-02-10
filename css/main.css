@@ -1997,7 +1997,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #117c34;
+  background: #ff57ec;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2041,7 +2041,7 @@ pre .javascript .function {
   padding: 0 5px;
 }
 .page-post-detail .sidebar-nav-overview {
-  margin-left: 10px;
+  margin-left: center;
 }
 .sidebar-nav .sidebar-nav-active {
   color: #fc6423;
