@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[不是博客的发展史]]></title>
+    <url>%2F2018%2F02%2F10%2F%E4%B8%8D%E6%98%AF%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B1%95%E5%8F%B2%2F</url>
+    <content type="text"><![CDATA[#到底折腾了哪些东西弄这个不咋地的窝，还是折腾了好几天，谁让我啥都不懂，还喜欢纠结纠结再纠结。官方教程看了又看，原创作者iisnan(Vi) 的github也经常去，还是在网上找了N多教程，一点一点的东拼西凑，目前也就还凑合啦。这个清单算是大体上记录了折腾过的东西。 点击爱心 头像更换https://www.jianshu.com/p/5d5931289c09 动态背景图 链接 文章底部标签 文章结束语（目前关闭在主题配置文件内和\themes\next\layout_macro\post.swig内修改可增加） 左侧社交（实现 ） 网站底部访问量 本地搜索未解决 评论功能未解决 博客总字数 文章字数统计 顶部加载条 文章缩略显示 自定义鼠标样式（不需要修改） 推荐阅读 站点地图（暂不需要） 作者关于 标签页，年份 分类页，年份 点击头像回首页(不知道怎么修改mmp)(https://mogeko.github.io/2017/08/27/Hexo-%E7%BE%8E%E5%8C%96/) 解决了 博文置顶（修改top 值）（感觉是个坑 崩了）（http://blog.csdn.net/qwerty200696/article/details/79010629）终于解决了（颜色也修改好了） 博文加密 背景音乐(待调试)（已经增加网易云音乐歌单，加载了aplayer插件，还不会用）（mmmmp, safari没有问题，但是Chrome有问题）（单曲没问题） 网站搜索添加(google完成代码，搜索有结果) 优化,博文压缩https://segmentfault.com/a/1190000008082288（我改不出来，一改就报错。。。） 文章点赞(不会造轮子，好像是要用couldlean？？) 云音乐上面加分割线，循环播放？？（搞不定） 文章百分比进度 版权信息(chrome 显示问题) 打赏（打赏按钮修改，颜色改了怎么没变化）（图片修改） 社交账号关注(侧边栏修改) high一下功能（有现成轮子用） 分享功能 （代码有添加，没有显示,主题配置文件进行修改） 文章阅读量，评论数(如何在首页显示，要用cloudlean插件，以后再说吧)（阅读量实现了） 去掉阅读时长（主题配置文件） 配色修改(暂时不修改了，太特么麻烦了)（颜色有待调整）（配色文件修改有问题）（改了，改了，在custom.styl, 里自己写)http://zhouhuix.cn/2016/11/24/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84Next%E4%B8%BB%E9%A2%98/给自己灌点鸡汤，哈哈哈。]]></content>
+      <categories>
+        <category>杂七杂八</category>
+      </categories>
+      <tags>
+        <tag>人生在于折腾</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[test]]></title>
     <url>%2F2018%2F02%2F09%2Ftest%2F</url>
     <content type="text"><![CDATA[]]></content>
