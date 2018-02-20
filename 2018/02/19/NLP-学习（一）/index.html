@@ -92,7 +92,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT, Study, Keep" />
+  <meta name="keywords" content="NLP," />
 
 
 
@@ -103,19 +103,20 @@
 
 
 
-<meta name="description" content="我是Amber本科就读于华中科技大学的计算机专业研究生就读于美国雪城大学计算机专业   欢迎你到我的博客来 我不是一个大牛 只是一个小白从初中起就觉得计算机很有意思 也很幸运地能够一直在这个领域学习但是拖延症啊 懒癌啊 为什么围绕着我学习的笔记总是记那么头三天构思的故事总是停留在框架说好要记录自己的生活 拍完照片懒得修这是一个新的开始我将为生活和技术奋斗">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于">
-<meta property="og:url" content="http://ambercheng.github.io/about/index.html">
+<meta name="description" content="NLP 学习（一） 课程要求 Python 3.x 需自行下载安装，mac自带python 2.x，安装可参考博客Mac下python 3.x安装 NLTK附上NLTK工具包模块  Python与NLTK入门在终端输入python即可调用python，终端显示”&amp;gt;&amp;gt;&amp;gt;”. 在启动python后，输入&amp;gt;&amp;gt;&amp;gt; import nltk即可加载nltk工具包了。输入&amp;">
+<meta name="keywords" content="NLP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NLP 学习（一）">
+<meta property="og:url" content="http://ambercheng.github.io/2018/02/19/NLP-学习（一）/index.html">
 <meta property="og:site_name" content="Amber&#39;s blog">
-<meta property="og:description" content="我是Amber本科就读于华中科技大学的计算机专业研究生就读于美国雪城大学计算机专业   欢迎你到我的博客来 我不是一个大牛 只是一个小白从初中起就觉得计算机很有意思 也很幸运地能够一直在这个领域学习但是拖延症啊 懒癌啊 为什么围绕着我学习的笔记总是记那么头三天构思的故事总是停留在框架说好要记录自己的生活 拍完照片懒得修这是一个新的开始我将为生活和技术奋斗">
+<meta property="og:description" content="NLP 学习（一） 课程要求 Python 3.x 需自行下载安装，mac自带python 2.x，安装可参考博客Mac下python 3.x安装 NLTK附上NLTK工具包模块  Python与NLTK入门在终端输入python即可调用python，终端显示”&amp;gt;&amp;gt;&amp;gt;”. 在启动python后，输入&amp;gt;&amp;gt;&amp;gt; import nltk即可加载nltk工具包了。输入&amp;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ambercheng.github.io/about/me.jpeg">
-<meta property="og:updated_time" content="2018-02-08T15:22:29.000Z">
+<meta property="og:image" content="http://ambercheng.github.io/2018/02/19/NLP-学习（一）/NLTK_Module.jpg">
+<meta property="og:updated_time" content="2018-02-20T02:14:53.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于">
-<meta name="twitter:description" content="我是Amber本科就读于华中科技大学的计算机专业研究生就读于美国雪城大学计算机专业   欢迎你到我的博客来 我不是一个大牛 只是一个小白从初中起就觉得计算机很有意思 也很幸运地能够一直在这个领域学习但是拖延症啊 懒癌啊 为什么围绕着我学习的笔记总是记那么头三天构思的故事总是停留在框架说好要记录自己的生活 拍完照片懒得修这是一个新的开始我将为生活和技术奋斗">
-<meta name="twitter:image" content="http://ambercheng.github.io/about/me.jpeg">
+<meta name="twitter:title" content="NLP 学习（一）">
+<meta name="twitter:description" content="NLP 学习（一） 课程要求 Python 3.x 需自行下载安装，mac自带python 2.x，安装可参考博客Mac下python 3.x安装 NLTK附上NLTK工具包模块  Python与NLTK入门在终端输入python即可调用python，终端显示”&amp;gt;&amp;gt;&amp;gt;”. 在启动python后，输入&amp;gt;&amp;gt;&amp;gt; import nltk即可加载nltk工具包了。输入&amp;">
+<meta name="twitter:image" content="http://ambercheng.github.io/2018/02/19/NLP-学习（一）/NLTK_Module.jpg">
 
 
 
@@ -145,13 +146,13 @@
 
 
 
-  <link rel="canonical" href="http://ambercheng.github.io/about/"/>
+  <link rel="canonical" href="http://ambercheng.github.io/2018/02/19/NLP-学习（一）/"/>
 
 
 
 
 
-  <title>关于 | Amber's blog</title>
+  <title>NLP 学习（一） | Amber's blog</title>
   
 
 
@@ -310,40 +311,370 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ambercheng.github.io/2018/02/19/NLP-学习（一）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Amber Cheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Amber's blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">关于</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
+        
+        
+          <h1 class="post-title" itemprop="name headline">NLP 学习（一）</h1>
         
 
-        
-          <script src="/assets/js/APlayer.min.js"> </script><p><img src="me.jpeg" alt=""></p>
+        <div class="post-meta">
+
+         
+
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-19T17:43:24-05:00">
+                2018-02-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye"></i> 浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数&#58;</span>
+                
+                <span title="字数">
+                  1,155
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">时长 &asymp;</span>
+                
+                <span title="时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="/assets/js/APlayer.min.js"> </script><h1 id="NLP-学习（一）"><a href="#NLP-学习（一）" class="headerlink" title="NLP 学习（一）"></a>NLP 学习（一）</h1><hr>
+<h2 id="课程要求"><a href="#课程要求" class="headerlink" title="课程要求"></a>课程要求</h2><ul>
+<li><em>Python 3.x</em> <br>需自行下载安装，mac自带python 2.x，安装可参考博客<a href="http://blog.csdn.net/wyl1987527/article/details/72871394" target="_blank" rel="noopener">Mac下python 3.x安装</a></li>
+<li><em>NLTK</em><br><br>附上NLTK工具包模块<br><img src="NLTK_Module.jpg" alt=""></li>
+</ul>
+<h2 id="Python与NLTK入门"><a href="#Python与NLTK入门" class="headerlink" title="Python与NLTK入门"></a>Python与NLTK入门</h2><p>在终端输入<code>python</code>即可调用python，终端显示”&gt;&gt;&gt;”.</p>
+<p>在启动python后，输入<code>&gt;&gt;&gt; import nltk</code>即可加载nltk工具包了。<br>输入<code>&gt;&gt;&gt; nltk.download()</code> 可浏览所有可用的软件包。<br>例如：<br><code>from nltk.book import</code><br>加载nltk的book模块，共9个文本，text1-text9。<br><code>&gt;&gt;&gt; text1</code><br>可直接查找到对应名称的文本。</p>
+<h2 id="文本相关操作"><a href="#文本相关操作" class="headerlink" title="文本相关操作"></a>文本相关操作</h2><ul>
+<li>concordance( )<br>使用方法：文本名.concordance(“单词”)<br>用于查找文本中的单词，结果显示所有匹配到的地方，会显示上下文</li>
+<li>similar( )<br>使用方法：文本名.similar(“单词”)<br>用于查找文本中与输入单词上下文相同的其他单词，例如：‘the men is’ 和‘the women is’中的‘men’和‘women’即为similar的关系。</li>
+<li>common_contexts( )<br>使用方法：文本名.common_contexts([“单词1”,”单词2”])<br>研究两个或两个以上的单词的共同上下文,使用similar的例子来说，会得到结果‘the__is’，即‘men’和‘women’共同的上下文。</li>
+<li>dispersion_plot()<br>使用方法：文本名.dispersion_plot([“单词1”, “单词2”, ···, “单词N”])<br>可以得到一张离散图，判断词在文本中的位置，即从文本开头算起在它前面有多少词。</li>
+<li>generate( )<br>使用方法：文本名.generate( )<br>依据所选文本产生随机文本(并不知道有什么用处，可能just for fun？？？看看后面学习有没有用到。)。在 generate 产生输出时，标点符号被从前面的词分裂出去。这并不是正确的英文格式，但可以知道文字和标点符号是彼此独立的。</li>
+<li>len( )<br>使用方法：len(textname)[注：便于书写，‘文本名’一致用‘textname’，‘单词’用‘word’表示]<br>可以得到对应文本的长度，是单词数和标点符号数之和。</li>
+<li>set( )<br>使用方法：set(textname)<br>获取文本的词汇表。</li>
+<li>sorted(set( ))<br>使用方法：sorted(set(textname))<br>获取排序词汇表。</li>
+<li>count( )<br>使用方法：textname.count(“word”)<br>用于统计一个词出现的次数。</li>
+<li>def<br>使用方法：<br>def function_name(parameter，parameter)： <br>···function structure<br>后面的缩进代码段用一个空格结束。</li>
+</ul>
+<p>##文本就是词链表<br><code>&gt;&gt;&gt; sent1 = [&#39;word1&#39;,&#39;word2&#39;,&#39;word3&#39;,&#39;word4&#39;]</code>输入一个自定义的词链表。<br><code>&gt;&gt;&gt; sent1</code> 可以获取sent1的内容。<br><code>&gt;&gt;&gt; sent1+sent2</code> 链接两个链表<br><code>&gt;&gt;&gt; sent1.append(&quot;word&quot;)</code> 追加链表<br><code>&gt;&gt;&gt; textname[number]</code> 查找对应位置的单词<code>&gt;&gt;&gt; textname.index(&#39;word&#39;)</code>索引单词第一次出现的位置<br><code>&gt;&gt;&gt; textname[start_number:end_number]</code>抽取语言片段（注意范围，start_number=0,end_number=len-1）</p>
+<p>##语言也可以进行计算<br><code>&gt;&gt;&gt; fdist = FreqDist(textname)</code><br><code>&gt;&gt;&gt; fdist</code> -&gt;获取总词数<br><code>&gt;&gt;&gt; vocabulary = fdist.keys()</code><br><code>&gt;&gt;&gt; vocabulary[:50]</code>-&gt;获取链表前50<br>[注：NameError：name ‘FreqDist’ is not defined，需要在一开始输入 nltk.book import *]<br><code>&gt;&gt;&gt; words=[w for w in set(textname) if len(w) &gt; n]</code> -&gt;筛选长度大于n的单词<br>[注：如果想要增加筛选条件可以用 if 条件1 and 条件2]<br><code>&gt;&gt;&gt; bigrams(textname)</code>双连词函数<br><code>&gt;&gt;&gt; textname.collocation()</code>基于单个词的频率预期得到的更频繁出现的双连词<br><br>附上nltk频率类函数：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">例子</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">fdist = FreqDist(samples)</td>
+<td style="text-align:center">创建包含给定样本的频率分布</td>
+</tr>
+<tr>
+<td style="text-align:center">fdist.inc(sample)</td>
+<td style="text-align:center">增加样本</td>
+</tr>
+<tr>
+<td style="text-align:center">fdist[‘monstrous’]</td>
+<td style="text-align:center">计数给定样本出现的次数</td>
+</tr>
+<tr>
+<td style="text-align:center">fdist.freq(‘monstrous’)</td>
+<td style="text-align:center">给定样本的频率</td>
+</tr>
+<tr>
+<td style="text-align:center">fdist.N()</td>
+<td style="text-align:center">样本总数</td>
+</tr>
+<tr>
+<td style="text-align:center">fdist.keys()</td>
+<td style="text-align:center">以频率递减顺序排序的样本链表</td>
+</tr>
+<tr>
+<td style="text-align:center">for sample in fdist:</td>
+<td style="text-align:center">以频率递减的顺序遍历样本</td>
+</tr>
+<tr>
+<td style="text-align:center">fdist.max()</td>
+<td style="text-align:center">数值最大的样本</td>
+</tr>
+<tr>
+<td style="text-align:center">fdist.tabulate()</td>
+<td style="text-align:center">绘制频率分布表</td>
+</tr>
+<tr>
+<td style="text-align:center">fdist.plot()</td>
+<td style="text-align:center">绘制频率分布图</td>
+</tr>
+<tr>
+<td style="text-align:center">fdist.plot(cumulative=True)</td>
+<td style="text-align:center">绘制累积频率分布图</td>
+</tr>
+<tr>
+<td style="text-align:center">fdist1 &lt; fdist2</td>
+<td style="text-align:center">测试样本在 fdist1 中出现的频率是否小于 fdist2</td>
+</tr>
+</tbody>
+</table>
+<p>##决策与控制<br>词的比较运算符</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">函数</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">s.startswith(t)</td>
+<td style="text-align:center">测试 s 是否以 t 开头</td>
+</tr>
+<tr>
+<td style="text-align:center">s.endswith(t)</td>
+<td style="text-align:center">测试 s 是否以 t 结尾</td>
+</tr>
+<tr>
+<td style="text-align:center">t in s</td>
+<td style="text-align:center">测试 s 是否包含 t</td>
+</tr>
+<tr>
+<td style="text-align:center">s.islower()</td>
+<td style="text-align:center">测试 s 中所有字符是否都是小写字母</td>
+</tr>
+<tr>
+<td style="text-align:center">s.isupper()</td>
+<td style="text-align:center">测试 s 中所有字符是否都是大写字母</td>
+</tr>
+<tr>
+<td style="text-align:center">s.isalpha()</td>
+<td style="text-align:center">测试 s 中所有字符是否都是字母</td>
+</tr>
+<tr>
+<td style="text-align:center">s.isalnum()</td>
+<td style="text-align:center">测试 s 中所有字符是否都是字母或数字</td>
+</tr>
+<tr>
+<td style="text-align:center">s.isdigit()</td>
+<td style="text-align:center">测试 s 中所有字符是否都是数字</td>
+</tr>
+<tr>
+<td style="text-align:center">s.istitle()</td>
+<td style="text-align:center">测试 s 是否首字母大写（s 中所有的词都首字母大写）</td>
+</tr>
+</tbody>
+</table>
+<p><code>&gt;&gt;&gt; [w.upper() for w in textname]</code><br><code>&gt;&gt;&gt; [w.lower() for w in textname]</code><br>大小写转换<br><code>word.lower() for word in text1 if word.isalpha()</code><br>转换为小写，过滤掉所有非字母元素，从词汇表中消除数字和标点符号。</p>
 <blockquote>
-<p>我是Amber<br>本科就读于华中科技大学的计算机专业<br>研究生就读于美国雪城大学计算机专业</p>
+<p>参考资料：PYTHON 自然语言处理中文翻译</p>
 </blockquote>
-<p><strong> 欢迎你到我的博客来</strong></p>
-<p>我不是一个大牛 只是一个小白<br>从初中起就觉得计算机很有意思 也很幸运地能够一直在这个领域学习<br>但是拖延症啊 懒癌啊 为什么围绕着我<br>学习的笔记总是记那么头三天<br>构思的故事总是停留在框架<br>说好要记录自己的生活 拍完照片懒得修<br>这是一个新的开始<br>我将为生活和技术奋斗</p>
 
-        
-      </div>
-      
-      
       
     </div>
     
     
     
+
+	<div>
+      
+        
+
+      
+	</div>
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>皮一下</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Amber Cheng 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/NLP/" rel="tag"><i class="fa fa-tag"></i> NLP</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/14/常用网址/" rel="next" title="常用网址">
+                <i class="fa fa-chevron-left"></i> 常用网址
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
   </div>
 
 
@@ -381,8 +712,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -507,6 +847,22 @@
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=516657140&auto=1&height=66"></iframe>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#NLP-学习（一）"><span class="nav-number">1.</span> <span class="nav-text">NLP 学习（一）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#课程要求"><span class="nav-number">1.1.</span> <span class="nav-text">课程要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python与NLTK入门"><span class="nav-number">1.2.</span> <span class="nav-text">Python与NLTK入门</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本相关操作"><span class="nav-number">1.3.</span> <span class="nav-text">文本相关操作</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
