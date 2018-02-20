@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[NLP 学习（一）]]></title>
     <url>%2F2018%2F02%2F19%2FNLP-%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[NLP 学习（一） 课程要求 Python 3.x 需自行下载安装，mac自带python 2.x，安装可参考博客Mac下python 3.x安装 NLTK附上NLTK工具包模块 Python与NLTK入门在终端输入python即可调用python，终端显示”&gt;&gt;&gt;”. 在启动python后，输入&gt;&gt;&gt; import nltk即可加载nltk工具包了。输入&gt;&gt;&gt; nltk.download() 可浏览所有可用的软件包。例如：from nltk.book import加载nltk的book模块，共9个文本，text1-text9。&gt;&gt;&gt; text1可直接查找到对应名称的文本。 文本相关操作 concordance( )使用方法：文本名.concordance(“单词”)用于查找文本中的单词，结果显示所有匹配到的地方，会显示上下文 similar( )使用方法：文本名.similar(“单词”)用于查找文本中与输入单词上下文相同的其他单词，例如：‘the men is’ 和‘the women is’中的‘men’和‘women’即为similar的关系。 common_contexts( )使用方法：文本名.common_contexts([“单词1”,”单词2”])研究两个或两个以上的单词的共同上下文,使用similar的例子来说，会得到结果‘the__is’，即‘men’和‘women’共同的上下文。 dispersion_plot()使用方法：文本名.dispersion_plot([“单词1”, “单词2”, ···, “单词N”])可以得到一张离散图，判断词在文本中的位置，即从文本开头算起在它前面有多少词。 generate( )使用方法：文本名.generate( )依据所选文本产生随机文本(并不知道有什么用处，可能just for fun？？？看看后面学习有没有用到。)。在 generate 产生输出时，标点符号被从前面的词分裂出去。这并不是正确的英文格式，但可以知道文字和标点符号是彼此独立的。 len( )使用方法：len(textname)[注：便于书写，‘文本名’一致用‘textname’，‘单词’用‘word’表示]可以得到对应文本的长度，是单词数和标点符号数之和。 set( )使用方法：set(textname)获取文本的词汇表。 sorted(set( ))使用方法：sorted(set(textname))获取排序词汇表。 count( )使用方法：textname.count(“word”)用于统计一个词出现的次数。 def使用方法：def function_name(parameter，parameter)： ···function structure后面的缩进代码段用一个空格结束。 ##文本就是词链表&gt;&gt;&gt; sent1 = [&#39;word1&#39;,&#39;word2&#39;,&#39;word3&#39;,&#39;word4&#39;]输入一个自定义的词链表。&gt;&gt;&gt; sent1 可以获取sent1的内容。&gt;&gt;&gt; sent1+sent2 链接两个链表&gt;&gt;&gt; sent1.append(&quot;word&quot;) 追加链表&gt;&gt;&gt; textname[number] 查找对应位置的单词&gt;&gt;&gt; textname.index(&#39;word&#39;)索引单词第一次出现的位置&gt;&gt;&gt; textname[start_number:end_number]抽取语言片段（注意范围，start_number=0,end_number=len-1） ##语言也可以进行计算&gt;&gt;&gt; fdist = FreqDist(textname)&gt;&gt;&gt; fdist -&gt;获取总词数&gt;&gt;&gt; vocabulary = fdist.keys()&gt;&gt;&gt; vocabulary[:50]-&gt;获取链表前50[注：NameError：name ‘FreqDist’ is not defined，需要在一开始输入 nltk.book import *]&gt;&gt;&gt; words=[w for w in set(textname) if len(w) &gt; n] -&gt;筛选长度大于n的单词[注：如果想要增加筛选条件可以用 if 条件1 and 条件2]&gt;&gt;&gt; bigrams(textname)双连词函数&gt;&gt;&gt; textname.collocation()基于单个词的频率预期得到的更频繁出现的双连词附上nltk频率类函数： 例子 描述 fdist = FreqDist(samples) 创建包含给定样本的频率分布 fdist.inc(sample) 增加样本 fdist[‘monstrous’] 计数给定样本出现的次数 fdist.freq(‘monstrous’) 给定样本的频率 fdist.N() 样本总数 fdist.keys() 以频率递减顺序排序的样本链表 for sample in fdist: 以频率递减的顺序遍历样本 fdist.max() 数值最大的样本 fdist.tabulate() 绘制频率分布表 fdist.plot() 绘制频率分布图 fdist.plot(cumulative=True) 绘制累积频率分布图 fdist1 &lt; fdist2 测试样本在 fdist1 中出现的频率是否小于 fdist2 ##决策与控制词的比较运算符 函数 含义 s.startswith(t) 测试 s 是否以 t 开头 s.endswith(t) 测试 s 是否以 t 结尾 t in s 测试 s 是否包含 t s.islower() 测试 s 中所有字符是否都是小写字母 s.isupper() 测试 s 中所有字符是否都是大写字母 s.isalpha() 测试 s 中所有字符是否都是字母 s.isalnum() 测试 s 中所有字符是否都是字母或数字 s.isdigit() 测试 s 中所有字符是否都是数字 s.istitle() 测试 s 是否首字母大写（s 中所有的词都首字母大写） &gt;&gt;&gt; [w.upper() for w in textname]&gt;&gt;&gt; [w.lower() for w in textname]大小写转换word.lower() for word in text1 if word.isalpha()转换为小写，过滤掉所有非字母元素，从词汇表中消除数字和标点符号。 参考资料：PYTHON 自然语言处理中文翻译]]></content>
+    <content type="text"><![CDATA[NLP 学习（一）课程要求 Python 3.x 需自行下载安装，mac自带python 2.x，安装可参考博客Mac下python 3.x安装 NLTK附上NLTK工具包模块 Python与NLTK入门在终端输入python即可调用python，终端显示”&gt;&gt;&gt;”. 在启动python后，输入&gt;&gt;&gt; import nltk即可加载nltk工具包了。输入&gt;&gt;&gt; nltk.download() 可浏览所有可用的软件包。例如：from nltk.book import加载nltk的book模块，共9个文本，text1-text9。&gt;&gt;&gt; text1可直接查找到对应名称的文本。 文本相关操作 concordance( )使用方法：文本名.concordance(“单词”)用于查找文本中的单词，结果显示所有匹配到的地方，会显示上下文 similar( )使用方法：文本名.similar(“单词”)用于查找文本中与输入单词上下文相同的其他单词，例如：‘the men is’ 和‘the women is’中的‘men’和‘women’即为similar的关系。 common_contexts( )使用方法：文本名.common_contexts([“单词1”,”单词2”])研究两个或两个以上的单词的共同上下文,使用similar的例子来说，会得到结果‘the__is’，即‘men’和‘women’共同的上下文。 dispersion_plot()使用方法：文本名.dispersion_plot([“单词1”, “单词2”, ···, “单词N”])可以得到一张离散图，判断词在文本中的位置，即从文本开头算起在它前面有多少词。 generate( )使用方法：文本名.generate( )依据所选文本产生随机文本(并不知道有什么用处，可能just for fun？？？看看后面学习有没有用到。)。在 generate 产生输出时，标点符号被从前面的词分裂出去。这并不是正确的英文格式，但可以知道文字和标点符号是彼此独立的。 len( )使用方法：len(textname)[注：便于书写，‘文本名’一致用‘textname’，‘单词’用‘word’表示]可以得到对应文本的长度，是单词数和标点符号数之和。 set( )使用方法：set(textname)获取文本的词汇表。 sorted(set( ))使用方法：sorted(set(textname))获取排序词汇表。 count( )使用方法：textname.count(“word”)用于统计一个词出现的次数。 def使用方法：def function_name(parameter，parameter)： ···function structure后面的缩进代码段用一个空格结束。 文本就是词链表&gt;&gt;&gt; sent1 = [&#39;word1&#39;,&#39;word2&#39;,&#39;word3&#39;,&#39;word4&#39;]输入一个自定义的词链表。&gt;&gt;&gt; sent1 可以获取sent1的内容。&gt;&gt;&gt; sent1+sent2 链接两个链表&gt;&gt;&gt; sent1.append(&quot;word&quot;) 追加链表&gt;&gt;&gt; textname[number] 查找对应位置的单词&gt;&gt;&gt; textname.index(&#39;word&#39;)索引单词第一次出现的位置&gt;&gt;&gt; textname[start_number:end_number]抽取语言片段（注意范围，start_number=0,end_number=len-1） 语言也可以进行计算&gt;&gt;&gt; fdist = FreqDist(textname)&gt;&gt;&gt; fdist -&gt;获取总词数&gt;&gt;&gt; vocabulary = fdist.keys()&gt;&gt;&gt; vocabulary[:50]-&gt;获取链表前50[注：NameError：name ‘FreqDist’ is not defined，需要在一开始输入 nltk.book import *]&gt;&gt;&gt; words=[w for w in set(textname) if len(w) &gt; n] -&gt;筛选长度大于n的单词[注：如果想要增加筛选条件可以用 if 条件1 and 条件2]&gt;&gt;&gt; bigrams(textname)双连词函数&gt;&gt;&gt; textname.collocation()基于单个词的频率预期得到的更频繁出现的双连词附上nltk频率类函数： 例子 描述 fdist = FreqDist(samples) 创建包含给定样本的频率分布 fdist.inc(sample) 增加样本 fdist[‘monstrous’] 计数给定样本出现的次数 fdist.freq(‘monstrous’) 给定样本的频率 fdist.N() 样本总数 fdist.keys() 以频率递减顺序排序的样本链表 for sample in fdist: 以频率递减的顺序遍历样本 fdist.max() 数值最大的样本 fdist.tabulate() 绘制频率分布表 fdist.plot() 绘制频率分布图 fdist.plot(cumulative=True) 绘制累积频率分布图 fdist1 &lt; fdist2 测试样本在 fdist1 中出现的频率是否小于 fdist2 决策与控制词的比较运算符 函数 含义 s.startswith(t) 测试 s 是否以 t 开头 s.endswith(t) 测试 s 是否以 t 结尾 t in s 测试 s 是否包含 t s.islower() 测试 s 中所有字符是否都是小写字母 s.isupper() 测试 s 中所有字符是否都是大写字母 s.isalpha() 测试 s 中所有字符是否都是字母 s.isalnum() 测试 s 中所有字符是否都是字母或数字 s.isdigit() 测试 s 中所有字符是否都是数字 s.istitle() 测试 s 是否首字母大写（s 中所有的词都首字母大写） &gt;&gt;&gt; [w.upper() for w in textname]&gt;&gt;&gt; [w.lower() for w in textname]大小写转换word.lower() for word in text1 if word.isalpha()转换为小写，过滤掉所有非字母元素，从词汇表中消除数字和标点符号。 参考资料：PYTHON 自然语言处理中文翻译]]></content>
       <tags>
         <tag>NLP</tag>
       </tags>
@@ -20,18 +20,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[nlp(4)]]></title>
-    <url>%2F2018%2F02%2F12%2Fnlp-4%2F</url>
-    <content type="text"><![CDATA[Sentence SegmentationPunctuation is crucial in determining the end of sentence. End of sentence is determined by space or “./?/!” Features for the end of a sentence: word]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>NLP</tag>
-        <tag>好好学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[不是博客的发展史]]></title>
     <url>%2F2018%2F02%2F10%2F%E4%B8%8D%E6%98%AF%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B1%95%E5%8F%B2%2F</url>
     <content type="text"><![CDATA[到底折腾了哪些东西弄这个不咋地的窝，还是折腾了好几天，谁让我啥都不懂，还喜欢纠结纠结再纠结。官方教程看了又看，原创作者iisnan(Vi) 的github也经常去，还是在网上找了N多教程，一点一点的东拼西凑，目前也就还凑合啦。这个清单算是大体上记录了折腾过的东西。 点击爱心 头像更换https://www.jianshu.com/p/5d5931289c09 动态背景图 链接 文章底部标签 文章结束语（目前关闭在主题配置文件内和\themes\next\layout_macro\post.swig内修改可增加） 左侧社交（实现 ） 网站底部访问量 本地搜索未解决 评论功能未解决 博客总字数 文章字数统计 顶部加载条 文章缩略显示 自定义鼠标样式（不需要修改） 推荐阅读 站点地图（暂不需要） 作者关于 标签页，年份 分类页，年份 点击头像回首页(不知道怎么修改mmp)(https://mogeko.github.io/2017/08/27/Hexo-%E7%BE%8E%E5%8C%96/) 解决了 博文置顶（修改top 值）（感觉是个坑 崩了）（http://blog.csdn.net/qwerty200696/article/details/79010629）终于解决了（颜色也修改好了） 博文加密 背景音乐(待调试)（已经增加网易云音乐歌单，加载了aplayer插件，还不会用）（mmmmp, safari没有问题，但是Chrome有问题）（单曲没问题） 网站搜索添加(google完成代码，搜索有结果) 优化,博文压缩https://segmentfault.com/a/1190000008082288（我改不出来，一改就报错。。。） 文章点赞(不会造轮子，好像是要用couldlean？？) 云音乐上面加分割线，循环播放？？（搞不定） 文章百分比进度 版权信息(chrome 显示问题) 打赏（打赏按钮修改，颜色改了怎么没变化）（图片修改） 社交账号关注(侧边栏修改) high一下功能（有现成轮子用） 分享功能 （代码有添加，没有显示,主题配置文件进行修改） 文章阅读量，评论数(如何在首页显示，要用cloudlean插件，以后再说吧)（阅读量实现了） 去掉阅读时长（主题配置文件） 配色修改(暂时不修改了，太特么麻烦了)（颜色有待调整）（配色文件修改有问题）（改了，改了，在custom.styl, 里自己写)http://zhouhuix.cn/2016/11/24/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84Next%E4%B8%BB%E9%A2%98/给自己灌点鸡汤，哈哈哈。]]></content>
@@ -41,17 +29,6 @@
       <tags>
         <tag>人生在于折腾</tag>
         <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[test]]></title>
-    <url>%2F2018%2F02%2F09%2Ftest%2F</url>
-    <content type="text"><![CDATA[]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>测试</tag>
       </tags>
   </entry>
   <entry>

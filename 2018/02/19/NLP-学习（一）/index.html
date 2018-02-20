@@ -103,19 +103,19 @@
 
 
 
-<meta name="description" content="NLP 学习（一） 课程要求 Python 3.x 需自行下载安装，mac自带python 2.x，安装可参考博客Mac下python 3.x安装 NLTK附上NLTK工具包模块  Python与NLTK入门在终端输入python即可调用python，终端显示”&amp;gt;&amp;gt;&amp;gt;”. 在启动python后，输入&amp;gt;&amp;gt;&amp;gt; import nltk即可加载nltk工具包了。输入&amp;">
+<meta name="description" content="NLP 学习（一）课程要求 Python 3.x 需自行下载安装，mac自带python 2.x，安装可参考博客Mac下python 3.x安装 NLTK附上NLTK工具包模块  Python与NLTK入门在终端输入python即可调用python，终端显示”&amp;gt;&amp;gt;&amp;gt;”. 在启动python后，输入&amp;gt;&amp;gt;&amp;gt; import nltk即可加载nltk工具包了。输入&amp;g">
 <meta name="keywords" content="NLP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NLP 学习（一）">
 <meta property="og:url" content="http://ambercheng.github.io/2018/02/19/NLP-学习（一）/index.html">
 <meta property="og:site_name" content="Amber&#39;s blog">
-<meta property="og:description" content="NLP 学习（一） 课程要求 Python 3.x 需自行下载安装，mac自带python 2.x，安装可参考博客Mac下python 3.x安装 NLTK附上NLTK工具包模块  Python与NLTK入门在终端输入python即可调用python，终端显示”&amp;gt;&amp;gt;&amp;gt;”. 在启动python后，输入&amp;gt;&amp;gt;&amp;gt; import nltk即可加载nltk工具包了。输入&amp;">
+<meta property="og:description" content="NLP 学习（一）课程要求 Python 3.x 需自行下载安装，mac自带python 2.x，安装可参考博客Mac下python 3.x安装 NLTK附上NLTK工具包模块  Python与NLTK入门在终端输入python即可调用python，终端显示”&amp;gt;&amp;gt;&amp;gt;”. 在启动python后，输入&amp;gt;&amp;gt;&amp;gt; import nltk即可加载nltk工具包了。输入&amp;g">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ambercheng.github.io/2018/02/19/NLP-学习（一）/NLTK_Module.jpg">
-<meta property="og:updated_time" content="2018-02-20T02:14:53.000Z">
+<meta property="og:updated_time" content="2018-02-20T02:30:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NLP 学习（一）">
-<meta name="twitter:description" content="NLP 学习（一） 课程要求 Python 3.x 需自行下载安装，mac自带python 2.x，安装可参考博客Mac下python 3.x安装 NLTK附上NLTK工具包模块  Python与NLTK入门在终端输入python即可调用python，终端显示”&amp;gt;&amp;gt;&amp;gt;”. 在启动python后，输入&amp;gt;&amp;gt;&amp;gt; import nltk即可加载nltk工具包了。输入&amp;">
+<meta name="twitter:description" content="NLP 学习（一）课程要求 Python 3.x 需自行下载安装，mac自带python 2.x，安装可参考博客Mac下python 3.x安装 NLTK附上NLTK工具包模块  Python与NLTK入门在终端输入python即可调用python，终端显示”&amp;gt;&amp;gt;&amp;gt;”. 在启动python后，输入&amp;gt;&amp;gt;&amp;gt; import nltk即可加载nltk工具包了。输入&amp;g">
 <meta name="twitter:image" content="http://ambercheng.github.io/2018/02/19/NLP-学习（一）/NLTK_Module.jpg">
 
 
@@ -430,8 +430,7 @@
       
 
       
-        <script src="/assets/js/APlayer.min.js"> </script><h1 id="NLP-学习（一）"><a href="#NLP-学习（一）" class="headerlink" title="NLP 学习（一）"></a>NLP 学习（一）</h1><hr>
-<h2 id="课程要求"><a href="#课程要求" class="headerlink" title="课程要求"></a>课程要求</h2><ul>
+        <script src="/assets/js/APlayer.min.js"> </script><h1 id="NLP-学习（一）"><a href="#NLP-学习（一）" class="headerlink" title="NLP 学习（一）"></a>NLP 学习（一）</h1><h2 id="课程要求"><a href="#课程要求" class="headerlink" title="课程要求"></a>课程要求</h2><ul>
 <li><em>Python 3.x</em> <br>需自行下载安装，mac自带python 2.x，安装可参考博客<a href="http://blog.csdn.net/wyl1987527/article/details/72871394" target="_blank" rel="noopener">Mac下python 3.x安装</a></li>
 <li><em>NLTK</em><br><br>附上NLTK工具包模块<br><img src="NLTK_Module.jpg" alt=""></li>
 </ul>
@@ -449,8 +448,8 @@
 <li>count( )<br>使用方法：textname.count(“word”)<br>用于统计一个词出现的次数。</li>
 <li>def<br>使用方法：<br>def function_name(parameter，parameter)： <br>···function structure<br>后面的缩进代码段用一个空格结束。</li>
 </ul>
-<p>##文本就是词链表<br><code>&gt;&gt;&gt; sent1 = [&#39;word1&#39;,&#39;word2&#39;,&#39;word3&#39;,&#39;word4&#39;]</code>输入一个自定义的词链表。<br><code>&gt;&gt;&gt; sent1</code> 可以获取sent1的内容。<br><code>&gt;&gt;&gt; sent1+sent2</code> 链接两个链表<br><code>&gt;&gt;&gt; sent1.append(&quot;word&quot;)</code> 追加链表<br><code>&gt;&gt;&gt; textname[number]</code> 查找对应位置的单词<code>&gt;&gt;&gt; textname.index(&#39;word&#39;)</code>索引单词第一次出现的位置<br><code>&gt;&gt;&gt; textname[start_number:end_number]</code>抽取语言片段（注意范围，start_number=0,end_number=len-1）</p>
-<p>##语言也可以进行计算<br><code>&gt;&gt;&gt; fdist = FreqDist(textname)</code><br><code>&gt;&gt;&gt; fdist</code> -&gt;获取总词数<br><code>&gt;&gt;&gt; vocabulary = fdist.keys()</code><br><code>&gt;&gt;&gt; vocabulary[:50]</code>-&gt;获取链表前50<br>[注：NameError：name ‘FreqDist’ is not defined，需要在一开始输入 nltk.book import *]<br><code>&gt;&gt;&gt; words=[w for w in set(textname) if len(w) &gt; n]</code> -&gt;筛选长度大于n的单词<br>[注：如果想要增加筛选条件可以用 if 条件1 and 条件2]<br><code>&gt;&gt;&gt; bigrams(textname)</code>双连词函数<br><code>&gt;&gt;&gt; textname.collocation()</code>基于单个词的频率预期得到的更频繁出现的双连词<br><br>附上nltk频率类函数：</p>
+<h2 id="文本就是词链表"><a href="#文本就是词链表" class="headerlink" title="文本就是词链表"></a>文本就是词链表</h2><p><code>&gt;&gt;&gt; sent1 = [&#39;word1&#39;,&#39;word2&#39;,&#39;word3&#39;,&#39;word4&#39;]</code>输入一个自定义的词链表。<br><code>&gt;&gt;&gt; sent1</code> 可以获取sent1的内容。<br><code>&gt;&gt;&gt; sent1+sent2</code> 链接两个链表<br><code>&gt;&gt;&gt; sent1.append(&quot;word&quot;)</code> 追加链表<br><code>&gt;&gt;&gt; textname[number]</code> 查找对应位置的单词<code>&gt;&gt;&gt; textname.index(&#39;word&#39;)</code>索引单词第一次出现的位置<br><code>&gt;&gt;&gt; textname[start_number:end_number]</code>抽取语言片段（注意范围，start_number=0,end_number=len-1）</p>
+<h2 id="语言也可以进行计算"><a href="#语言也可以进行计算" class="headerlink" title="语言也可以进行计算"></a>语言也可以进行计算</h2><p><code>&gt;&gt;&gt; fdist = FreqDist(textname)</code><br><code>&gt;&gt;&gt; fdist</code> -&gt;获取总词数<br><code>&gt;&gt;&gt; vocabulary = fdist.keys()</code><br><code>&gt;&gt;&gt; vocabulary[:50]</code>-&gt;获取链表前50<br>[注：NameError：name ‘FreqDist’ is not defined，需要在一开始输入 nltk.book import *]<br><code>&gt;&gt;&gt; words=[w for w in set(textname) if len(w) &gt; n]</code> -&gt;筛选长度大于n的单词<br>[注：如果想要增加筛选条件可以用 if 条件1 and 条件2]<br><code>&gt;&gt;&gt; bigrams(textname)</code>双连词函数<br><code>&gt;&gt;&gt; textname.collocation()</code>基于单个词的频率预期得到的更频繁出现的双连词<br><br>附上nltk频率类函数：</p>
 <table>
 <thead>
 <tr>
@@ -509,7 +508,7 @@
 </tr>
 </tbody>
 </table>
-<p>##决策与控制<br>词的比较运算符</p>
+<h2 id="决策与控制"><a href="#决策与控制" class="headerlink" title="决策与控制"></a>决策与控制</h2><p>词的比较运算符</p>
 <table>
 <thead>
 <tr>
@@ -743,7 +742,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -754,7 +753,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -765,7 +764,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -857,7 +856,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#NLP-学习（一）"><span class="nav-number">1.</span> <span class="nav-text">NLP 学习（一）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#课程要求"><span class="nav-number">1.1.</span> <span class="nav-text">课程要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python与NLTK入门"><span class="nav-number">1.2.</span> <span class="nav-text">Python与NLTK入门</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本相关操作"><span class="nav-number">1.3.</span> <span class="nav-text">文本相关操作</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#NLP-学习（一）"><span class="nav-number">1.</span> <span class="nav-text">NLP 学习（一）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#课程要求"><span class="nav-number">1.1.</span> <span class="nav-text">课程要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python与NLTK入门"><span class="nav-number">1.2.</span> <span class="nav-text">Python与NLTK入门</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本相关操作"><span class="nav-number">1.3.</span> <span class="nav-text">文本相关操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本就是词链表"><span class="nav-number">1.4.</span> <span class="nav-text">文本就是词链表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语言也可以进行计算"><span class="nav-number">1.5.</span> <span class="nav-text">语言也可以进行计算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#决策与控制"><span class="nav-number">1.6.</span> <span class="nav-text">决策与控制</span></a></li></ol></li></ol></div>
             
 
           </div>
