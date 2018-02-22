@@ -4,11 +4,20 @@
     <title><![CDATA[LeetCode 106 Construct Binary Tree from Inorder and Postorder Traversal]]></title>
     <url>%2F2018%2F02%2F22%2FLeetCode-106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal%2F</url>
     <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>LeetCode</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[NLP 学习（一）]]></title>
     <url>%2F2018%2F02%2F19%2FNLP-%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%2F</url>
     <content type="text"><![CDATA[NLP 学习（一）课程要求 Python 3.x 需自行下载安装，mac自带python 2.x，安装可参考博客Mac下python 3.x安装 NLTK附上NLTK工具包模块 Python与NLTK入门在终端输入python即可调用python，终端显示”&gt;&gt;&gt;”. 在启动python后，输入&gt;&gt;&gt; import nltk即可加载nltk工具包了。输入&gt;&gt;&gt; nltk.download() 可浏览所有可用的软件包。例如：from nltk.book import加载nltk的book模块，共9个文本，text1-text9。&gt;&gt;&gt; text1可直接查找到对应名称的文本。 文本相关操作 concordance( )使用方法：文本名.concordance(“单词”)用于查找文本中的单词，结果显示所有匹配到的地方，会显示上下文 similar( )使用方法：文本名.similar(“单词”)用于查找文本中与输入单词上下文相同的其他单词，例如：‘the men is’ 和‘the women is’中的‘men’和‘women’即为similar的关系。 common_contexts( )使用方法：文本名.common_contexts([“单词1”,”单词2”])研究两个或两个以上的单词的共同上下文,使用similar的例子来说，会得到结果‘the__is’，即‘men’和‘women’共同的上下文。 dispersion_plot()使用方法：文本名.dispersion_plot([“单词1”, “单词2”, ···, “单词N”])可以得到一张离散图，判断词在文本中的位置，即从文本开头算起在它前面有多少词。 generate( )使用方法：文本名.generate( )依据所选文本产生随机文本(并不知道有什么用处，可能just for fun？？？看看后面学习有没有用到。)。在 generate 产生输出时，标点符号被从前面的词分裂出去。这并不是正确的英文格式，但可以知道文字和标点符号是彼此独立的。 len( )使用方法：len(textname)[注：便于书写，‘文本名’一致用‘textname’，‘单词’用‘word’表示]可以得到对应文本的长度，是单词数和标点符号数之和。 set( )使用方法：set(textname)获取文本的词汇表。 sorted(set( ))使用方法：sorted(set(textname))获取排序词汇表。 count( )使用方法：textname.count(“word”)用于统计一个词出现的次数。 def使用方法：def function_name(parameter，parameter)： ···function structure后面的缩进代码段用一个空格结束。 文本就是词链表&gt;&gt;&gt; sent1 = [&#39;word1&#39;,&#39;word2&#39;,&#39;word3&#39;,&#39;word4&#39;]输入一个自定义的词链表。&gt;&gt;&gt; sent1 可以获取sent1的内容。&gt;&gt;&gt; sent1+sent2 链接两个链表&gt;&gt;&gt; sent1.append(&quot;word&quot;) 追加链表&gt;&gt;&gt; textname[number] 查找对应位置的单词&gt;&gt;&gt; textname.index(&#39;word&#39;)索引单词第一次出现的位置&gt;&gt;&gt; textname[start_number:end_number]抽取语言片段（注意范围，start_number=0,end_number=len-1） 语言也可以进行计算&gt;&gt;&gt; fdist = FreqDist(textname)&gt;&gt;&gt; fdist -&gt;获取总词数&gt;&gt;&gt; vocabulary = fdist.keys()&gt;&gt;&gt; vocabulary[:50]-&gt;获取链表前50[注：NameError：name ‘FreqDist’ is not defined，需要在一开始输入 nltk.book import *]&gt;&gt;&gt; words=[w for w in set(textname) if len(w) &gt; n] -&gt;筛选长度大于n的单词[注：如果想要增加筛选条件可以用 if 条件1 and 条件2]&gt;&gt;&gt; bigrams(textname)双连词函数&gt;&gt;&gt; textname.collocation()基于单个词的频率预期得到的更频繁出现的双连词附上nltk频率类函数： 例子 描述 fdist = FreqDist(samples) 创建包含给定样本的频率分布 fdist.inc(sample) 增加样本 fdist[‘monstrous’] 计数给定样本出现的次数 fdist.freq(‘monstrous’) 给定样本的频率 fdist.N() 样本总数 fdist.keys() 以频率递减顺序排序的样本链表 for sample in fdist: 以频率递减的顺序遍历样本 fdist.max() 数值最大的样本 fdist.tabulate() 绘制频率分布表 fdist.plot() 绘制频率分布图 fdist.plot(cumulative=True) 绘制累积频率分布图 fdist1 &lt; fdist2 测试样本在 fdist1 中出现的频率是否小于 fdist2 决策与控制词的比较运算符 函数 含义 s.startswith(t) 测试 s 是否以 t 开头 s.endswith(t) 测试 s 是否以 t 结尾 t in s 测试 s 是否包含 t s.islower() 测试 s 中所有字符是否都是小写字母 s.isupper() 测试 s 中所有字符是否都是大写字母 s.isalpha() 测试 s 中所有字符是否都是字母 s.isalnum() 测试 s 中所有字符是否都是字母或数字 s.isdigit() 测试 s 中所有字符是否都是数字 s.istitle() 测试 s 是否首字母大写（s 中所有的词都首字母大写） &gt;&gt;&gt; [w.upper() for w in textname]&gt;&gt;&gt; [w.lower() for w in textname]大小写转换word.lower() for word in text1 if word.isalpha()转换为小写，过滤掉所有非字母元素，从词汇表中消除数字和标点符号。 参考资料：PYTHON 自然语言处理中文翻译]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
       <tags>
         <tag>NLP</tag>
       </tags>
