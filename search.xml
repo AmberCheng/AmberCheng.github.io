@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[NLP-学习（二）]]></title>
+    <url>%2F2018%2F02%2F26%2FNLP-%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[LeetCode 106 Construct Binary Tree from Inorder and Postorder Traversal]]></title>
     <url>%2F2018%2F02%2F22%2FLeetCode-106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal%2F</url>
     <content type="text"><![CDATA[题目：Given inorder and postorder traversal of a tree, construct the binary tree.Note:You may assume that duplicates do not exist in the tree.示例：1postorder = [9,15,7,20,3] 可以得到:1234 / \9 20 / \ 15 7 分析：inorder中序遍历，所得的结果有一个特点：根节点的左边是左子树，根节点的右边是右子树。postorder后续遍历，所得的结果特点为，最后一个是根节点。因此可以结合二者确定二叉树。当处理完根节点后，postorder中的最后一个元素是它的右子节点，因此对于子节点的处理应该是先右后左的顺序。C++ solution1234567891011121314151617181920212223242526272829303132/** * Definition for a binary tree node. * struct TreeNode &#123; * int val; * TreeNode *left; * TreeNode *right; * TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125; * &#125;; */class Solution&#123;public: TreeNode* buildTree(vector&lt;int&gt;&amp; inorder, vector&lt;int&gt;&amp; postorder) &#123; return buildTree(postorder, inorder, 0, inorder.size() - 1); &#125;private: TreeNode* buildTree(vector&lt;int&gt; &amp;postorder, const vector&lt;int&gt; &amp;inorder, int first, int last) &#123; if (postorder.empty() || first &gt; last) &#123; return nullptr; &#125; int val = postorder.back(); postorder.pop_back(); auto node = new TreeNode(val); auto it = find(inorder.begin() + first, inorder.begin() + last + 1, val); node-&gt;right = buildTree(postorder, inorder, it - inorder.begin() + 1, last); node-&gt;left = buildTree(postorder, inorder, first, it - inorder.begin() - 1); return node; &#125;&#125;;]]></content>
