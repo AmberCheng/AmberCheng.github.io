@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[NLP-学习（二）]]></title>
     <url>%2F2018%2F02%2F26%2FNLP-%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[NLP-文本语料和词汇资源Gutenberg语料库加载方法：&gt;&gt;&gt;import nltk&gt;&gt;&gt;nltk.corpus.gutenberg,fileids()或者&gt;&gt;&gt;from nltk.corpus import gutenberg&gt;&gt;&gt;gutenberg.fileids()]]></content>
+    <content type="text"><![CDATA[NLP-文本语料和词汇资源Gutenberg语料库 加载方法：&gt;&gt;&gt;import nltk&gt;&gt;&gt;nltk.corpus.gutenberg,fileids()或者&gt;&gt;&gt;from nltk.corpus import gutenberg&gt;&gt;&gt;gutenberg.fileids()即可显示出Gutenberg内所有的文本如果想要对语料库内的所有文本进行操作则需要进行循环遍历，在每次的遍历操作中进行文本的处理。&gt;&gt;&gt; for fileid in gutenberg.fileids(): 文本处理利用word()函数进行文本调用简化操作，即为一个文本取一个别名；eg.&gt;&gt;&gt;emma = gutenberg.words(&#39;austen-emma.txt&#39;)利用sents()函数对句子进行获取，把文本划分为句子，句子为词链表；eg.&gt;&gt;&gt; emma_sentences = gutenberg.sents(&#39;austen-emma.txt&#39;)利用raw()函数获取未经处理过的文本。eg.&gt;&gt;&gt; emmatext=gutenberg.raw(&#39;austen-emma.txt&#39;) 语料库的结构]]></content>
       <categories>
         <category>学习</category>
       </categories>

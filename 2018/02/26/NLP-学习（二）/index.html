@@ -103,18 +103,18 @@
 
 
 
-<meta name="description" content="NLP-文本语料和词汇资源Gutenberg语料库加载方法：&amp;gt;&amp;gt;&amp;gt;import nltk&amp;gt;&amp;gt;&amp;gt;nltk.corpus.gutenberg,fileids()或者&amp;gt;&amp;gt;&amp;gt;from nltk.corpus import gutenberg&amp;gt;&amp;gt;&amp;gt;gutenberg.fileids()">
+<meta name="description" content="NLP-文本语料和词汇资源Gutenberg语料库 加载方法：&amp;gt;&amp;gt;&amp;gt;import nltk&amp;gt;&amp;gt;&amp;gt;nltk.corpus.gutenberg,fileids()或者&amp;gt;&amp;gt;&amp;gt;from nltk.corpus import gutenberg&amp;gt;&amp;gt;&amp;gt;gutenberg.fileids()即可显示出Gutenberg内所有的文本如果想要">
 <meta name="keywords" content="NLP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NLP-学习（二）">
 <meta property="og:url" content="http://ambercheng.github.io/2018/02/26/NLP-学习（二）/index.html">
 <meta property="og:site_name" content="Amber&#39;s blog">
-<meta property="og:description" content="NLP-文本语料和词汇资源Gutenberg语料库加载方法：&amp;gt;&amp;gt;&amp;gt;import nltk&amp;gt;&amp;gt;&amp;gt;nltk.corpus.gutenberg,fileids()或者&amp;gt;&amp;gt;&amp;gt;from nltk.corpus import gutenberg&amp;gt;&amp;gt;&amp;gt;gutenberg.fileids()">
+<meta property="og:description" content="NLP-文本语料和词汇资源Gutenberg语料库 加载方法：&amp;gt;&amp;gt;&amp;gt;import nltk&amp;gt;&amp;gt;&amp;gt;nltk.corpus.gutenberg,fileids()或者&amp;gt;&amp;gt;&amp;gt;from nltk.corpus import gutenberg&amp;gt;&amp;gt;&amp;gt;gutenberg.fileids()即可显示出Gutenberg内所有的文本如果想要">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-02T19:11:43.716Z">
+<meta property="og:updated_time" content="2018-04-02T19:26:24.707Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NLP-学习（二）">
-<meta name="twitter:description" content="NLP-文本语料和词汇资源Gutenberg语料库加载方法：&amp;gt;&amp;gt;&amp;gt;import nltk&amp;gt;&amp;gt;&amp;gt;nltk.corpus.gutenberg,fileids()或者&amp;gt;&amp;gt;&amp;gt;from nltk.corpus import gutenberg&amp;gt;&amp;gt;&amp;gt;gutenberg.fileids()">
+<meta name="twitter:description" content="NLP-文本语料和词汇资源Gutenberg语料库 加载方法：&amp;gt;&amp;gt;&amp;gt;import nltk&amp;gt;&amp;gt;&amp;gt;nltk.corpus.gutenberg,fileids()或者&amp;gt;&amp;gt;&amp;gt;from nltk.corpus import gutenberg&amp;gt;&amp;gt;&amp;gt;gutenberg.fileids()即可显示出Gutenberg内所有的文本如果想要">
 
 
 
@@ -413,7 +413,7 @@
                   <span class="post-meta-item-text">字数&#58;</span>
                 
                 <span title="字数">
-                  33
+                  191
                 </span>
               
 
@@ -450,8 +450,11 @@
       
 
       
-        <script src="/assets/js/APlayer.min.js"> </script><h1 id="NLP-文本语料和词汇资源"><a href="#NLP-文本语料和词汇资源" class="headerlink" title="NLP-文本语料和词汇资源"></a>NLP-文本语料和词汇资源</h1><h2 id="Gutenberg语料库"><a href="#Gutenberg语料库" class="headerlink" title="Gutenberg语料库"></a>Gutenberg语料库</h2><p>加载方法：<br><code>&gt;&gt;&gt;import nltk</code><br><code>&gt;&gt;&gt;nltk.corpus.gutenberg,fileids()</code><br>或者<br><code>&gt;&gt;&gt;from nltk.corpus import gutenberg</code><br><code>&gt;&gt;&gt;gutenberg.fileids()</code></p>
-
+        <script src="/assets/js/APlayer.min.js"> </script><h1 id="NLP-文本语料和词汇资源"><a href="#NLP-文本语料和词汇资源" class="headerlink" title="NLP-文本语料和词汇资源"></a>NLP-文本语料和词汇资源</h1><h2 id="Gutenberg语料库"><a href="#Gutenberg语料库" class="headerlink" title="Gutenberg语料库"></a>Gutenberg语料库</h2><ul>
+<li>加载方法：<br><code>&gt;&gt;&gt;import nltk</code><br><code>&gt;&gt;&gt;nltk.corpus.gutenberg,fileids()</code><br>或者<br><code>&gt;&gt;&gt;from nltk.corpus import gutenberg</code><br><code>&gt;&gt;&gt;gutenberg.fileids()</code><br>即可显示出Gutenberg内所有的文本<br>如果想要对语料库内的所有文本进行操作则需要进行循环遍历，在每次的遍历操作中进行文本的处理。<br><code>&gt;&gt;&gt; for fileid in gutenberg.fileids():</code></li>
+<li>文本处理<br>利用word()函数进行文本调用简化操作，即为一个文本取一个别名；<br>eg.<code>&gt;&gt;&gt;emma = gutenberg.words(&#39;austen-emma.txt&#39;)</code><br>利用sents()函数对句子进行获取，把文本划分为句子，句子为词链表；<br>eg.<code>&gt;&gt;&gt; emma_sentences = gutenberg.sents(&#39;austen-emma.txt&#39;)</code><br>利用raw()函数获取未经处理过的文本。<br>eg.<code>&gt;&gt;&gt; emmatext=gutenberg.raw(&#39;austen-emma.txt&#39;)</code></li>
+</ul>
+<h2 id="语料库的结构"><a href="#语料库的结构" class="headerlink" title="语料库的结构"></a>语料库的结构</h2>
       
     </div>
     
@@ -746,7 +749,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#NLP-文本语料和词汇资源"><span class="nav-number">1.</span> <span class="nav-text">NLP-文本语料和词汇资源</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Gutenberg语料库"><span class="nav-number">1.1.</span> <span class="nav-text">Gutenberg语料库</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#NLP-文本语料和词汇资源"><span class="nav-number">1.</span> <span class="nav-text">NLP-文本语料和词汇资源</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Gutenberg语料库"><span class="nav-number">1.1.</span> <span class="nav-text">Gutenberg语料库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语料库的结构"><span class="nav-number">1.2.</span> <span class="nav-text">语料库的结构</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -795,7 +798,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共2.3k字</span>
+  <span class="post-count">博客全站共2.5k字</span>
 </div>
 
         
