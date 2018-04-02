@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[NLP-学习（二）]]></title>
     <url>%2F2018%2F02%2F26%2FNLP-%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[NLP-文本语料和词汇资源Gutenberg语料库加载方法：import nltk ```1``` &gt;&gt;&gt;nltk.corpus.gutenberg,fileids() 或者from nltk.corpus import gutenberg ```1``` &gt;&gt;&gt; gutenberg.fileids()]]></content>
+    <content type="text"><![CDATA[NLP-文本语料和词汇资源Gutenberg语料库加载方法：nltk ```1``` &gt;&gt;&gt;nltk.corpus.gutenberg,fileids() 或者nltk.corpus import gutenberg ```1``` &gt;&gt;&gt;gutenberg.fileids()]]></content>
       <categories>
         <category>学习</category>
       </categories>
