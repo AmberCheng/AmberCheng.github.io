@@ -111,7 +111,7 @@
 <meta property="og:site_name" content="Amber&#39;s blog">
 <meta property="og:description" content="NLP-文本语料和词汇资源Gutenberg语料库 加载方法：&amp;gt;&amp;gt;&amp;gt;import nltk&amp;gt;&amp;gt;&amp;gt;nltk.corpus.gutenberg,fileids()或者&amp;gt;&amp;gt;&amp;gt;from nltk.corpus import gutenberg&amp;gt;&amp;gt;&amp;gt;gutenberg.fileids()即可显示出Gutenberg内所有的文本如果想要">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-29T18:29:22.592Z">
+<meta property="og:updated_time" content="2018-05-31T17:56:00.965Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NLP-学习（二）">
 <meta name="twitter:description" content="NLP-文本语料和词汇资源Gutenberg语料库 加载方法：&amp;gt;&amp;gt;&amp;gt;import nltk&amp;gt;&amp;gt;&amp;gt;nltk.corpus.gutenberg,fileids()或者&amp;gt;&amp;gt;&amp;gt;from nltk.corpus import gutenberg&amp;gt;&amp;gt;&amp;gt;gutenberg.fileids()即可显示出Gutenberg内所有的文本如果想要">
@@ -413,7 +413,7 @@
                   <span class="post-meta-item-text">字数&#58;</span>
                 
                 <span title="字数">
-                  505
+                  628
                 </span>
               
 
@@ -456,7 +456,7 @@
 </ul>
 <h2 id="载入语料库"><a href="#载入语料库" class="headerlink" title="载入语料库"></a>载入语料库</h2><p>前面的处理都是对现成存在语料库的处理，当我们想要自己处理相关的数据集的时候，需要加载一些语料库进来。<br>在 NLTK 中的 PlaintextCorpusReader 帮助下载入它们。检查你的文件在文件系统中的位 置；在下面的例子中，我们假定你的文件在/usr/share/dict 目录下。不管是什么位置，将变量 corpus_root的值设置为这个目录。 PlaintextCorpusReader 初始化函数的第二个参 数可以是一个如[‘a.txt’, ‘test/b.txt’]这样的 fileids 链表，或者一个匹配所有fileids 的模式， 如：’[abc]/.<em>.txt’<br><code>&gt;&gt;&gt; from nltk.corpus import PlaintextCorpusReader</code><br><code>&gt;&gt;&gt; corpus_root = &#39;/usr/share/dict&#39;</code><br>`&gt;&gt;&gt; wordlists = PlaintextCorpusReader(corpus_root, ‘.</em>‘)` </p>
 <h2 id="停用语料库"><a href="#停用语料库" class="headerlink" title="停用语料库"></a>停用语料库</h2><p>停用词语料库，由高频词汇组成，如：the，to，我们有时在进一步的处理时需要将它们从文档中过滤。停用词通常几乎没有什么重要的信息，而它们的出现会使区分文本变困难。<br><code>&gt;&gt;&gt; stopwords = nltk.corpus.stopwords.words(&#39;english&#39;)</code><br><code>&gt;&gt;&gt;content = [w for w in text if w.lower() not in stopwords]</code> </p>
-<h2 id="WordNet"><a href="#WordNet" class="headerlink" title="WordNet"></a>WordNet</h2><p>WordNet 是面向语义的英语词典，类似与传统辞典，但具有更丰富的结构。NLTK 中包括英语 WordNet，共有 155,287 个词和 117,659 个同义词集合。</p>
+<h2 id="WordNet"><a href="#WordNet" class="headerlink" title="WordNet"></a>WordNet</h2><p>WordNet 是面向语义的英语词典，类似与传统辞典，但具有更丰富的结构。NLTK 中包括英语 WordNet，共有 155,287 个词和 117,659 个同义词集合。<br>WordNet 概念层次片段：每个节点对应一个同义词集;边表示上位词/下位词关系，即 上级概念与从属概念的关系。<br>上位词和下位词被称为词汇关系，因为它们是同义集之间的关系。这个关系定位上下为 “是一个”层次。WordNet 网络另一个重要的漫游方式是从物品到它们的部件（部分）或到 它们被包含其中的东西（整体）。 </p>
 
       
     </div>
@@ -805,7 +805,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共3.7k字</span>
+  <span class="post-count">博客全站共3.8k字</span>
 </div>
 
         
